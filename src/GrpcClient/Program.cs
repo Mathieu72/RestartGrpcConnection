@@ -3,7 +3,7 @@ using SampleGrpcServer;
 
 namespace SampleGrpcClient;
 
-class Program
+static class Program
 {
     static async Task Main(string[] args)
     {
@@ -36,7 +36,7 @@ class Program
             {
                 Console.WriteLine($"Response: {response.Message}");
             }
-            await Task.Delay(TimeSpan.FromSeconds(5));
+            await Task.Delay(TimeSpan.FromSeconds(2));
         }
     }
 }
