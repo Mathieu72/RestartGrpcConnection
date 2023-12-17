@@ -10,6 +10,7 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddGrpc();
+        builder.Services.AddLogging(loggingBuilder => loggingBuilder.AddConsole());
 
         var app = builder.Build();
 

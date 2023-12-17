@@ -36,7 +36,7 @@ class Program
             {
                 Console.WriteLine($"Response: {response.Message}");
             }
-            await Task.Delay(TimeSpan.FromSeconds(1));
+            await Task.Delay(TimeSpan.FromSeconds(5));
         }
     }
 }
